@@ -1,0 +1,48 @@
+# Application.cpp #
+-> Program's main function (program's entrance).
+
+# Program_Config.h #
+-> Program's macros definitions.
+
+# Debugger.h #
+-> Enables macros from debugging to output logs into the console.
+-> It is enabled only when the compiler is set to Debug
+
+# Program_Manager.h #
+-> This is the program's main class that set-ups the program to work.
+-> Here it gets the application name, terminal_directory (program's path).
+-> VAR login_status represents if the conectivity to the console was established (if the user logged in).
+-> Sets the scene to login, after that if the user logged in (login_status = true), it moves on to the command line scene where you can run console commands.
+-> Class generates a security key for other programs linked to the console to work.
+-> Whenever you need to access the security key from other programs, you need to generate the security key temp file, then delete it.
+
+# PC_Info.h #
+-> This class is used to get all pc paths relative to the program, such as: appdata directory, accounts file path, temp directory.
+-> It also checks if the appdata directory (FillInHack - Console) folder exists and the accounts file (accounts.data). If the files doesn't exist, the class creates them.
+
+# Account_Login.h #
+-> This class uses the data gathered from PC_Info class to access and read the accounts file into a vector-struct like.
+-> When login scene is instantiated from the Program_Manager class, Scene_Builder class accesses via the instance the static object relative to Account_Login class that calls the login function (verifies the account's credentials and if matches, the login_status var is set to true which means the user successfully logged in).
+-> This class works with the accounts file: gets all accounts, update accounts file, delete an account, change username, change password. It is also used to register a new account.
+
+# Scene_Builder.h #
+-> This class is used to display the login page, register page, command line. All these are called scenes (login scene, register scene, command line scene).
+-> The Program_Manager class manipulates this class in order for the program to change the scenes.
+
+# Terminal.h #
+-> This class is used via the Scene_Builder class when the user logged in and the scene is set to command line.
+-> Displays the console's command line.
+-> Through Terminal_Commands class it gives the command inserted into the terminal and executes it.
+
+# Terminal_Commands.h #
+-> This class gets the user's command (that was written into the console) from the Terminal class and runs it.
+-> It sepparates the command in two strings: the command itself and it's arguments.
+-> When executed, runs the application relative to the command (ex: encryptor command runs the encryptor.exe application).
+
+# Integrated_Encryptor.h #
+-> There is an algorithm used for decrypting some strings that aren't recommended to be visible in the source code (such as static file names (ex: example.txt)).
+-> It's also used for checking the security file from another application (the encryptor app uses this).
+
+# Hashcrack_Bruteforce.h #
+-> This class is ONLY for the encryptor application.
+-> Nothing more or less to be told here, I guess.

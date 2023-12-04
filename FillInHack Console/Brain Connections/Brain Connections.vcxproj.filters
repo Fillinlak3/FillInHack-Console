@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libs\Account_Login.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Debugger.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\dirent.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Hashcrack_Bruteforce.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Integrated_Encryptor.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\PC_Info.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Program_Config.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Program_Manager.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Scene_Builder.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Terminal.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libs\Terminal_Commands.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Account_Login.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Hashcrack_Bruteforce.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Integrated_Encryptor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PC_Info.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Program_Manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Scene_Builder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Terminal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Terminal_Commands.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

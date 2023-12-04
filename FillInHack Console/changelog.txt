@@ -1,0 +1,54 @@
+04.09.22 Added FIH Updater and linked Console to the updater
+===========
+05.09.22
+	* Updater:
+	- After the running of the Updater, the Console will appear in a new window.
+	- If any exception/error is thrown, the versions file will be deleted in order to let the Console when opened to run the Updater firstly.
+	BUGS RESOLVED:
+	- If the user was closing the program, it wouldn't delete the versions file. This was resolved by adding the same function as in FIH_Console: SetConsoleCtrlHandler that checks for the CTRL-Break event or when the user presses the x button from the panel.
+	- When the Console ran from the updater program, it's path was set to Updater's path. This was resolved by setting Console's working directory manual from code.
+===========
+06.09.22
+	* Project:
+	- Added a new project called: Brain Connections that has all the header&src files in it.
+	- Referentiated to FIH_Header
+	* Console & Encryptor:
+	- Dereferentiated FIH_Header and referentiated Brain Conenctions.
+	* Encryptor:
+	- Added a new instance of pc_info into check_security_key func from /Libs/Integrated_Encryptor.h
+	* Brain Connections:
+		* Account_Login:
+		- Modified funcs: ChangeUsername, ChangePassword and __updateDataFile.
+		* Scene_Builder:
+		- Added funcs: ChangeUsernamePage, ChangepasswordPage.
+		* Terminal_Commands:
+		- Added new commands "userwd", "passwd".
+	* Help:
+	- Added the new commands to the help list.
+===========
+10.09.22
+	* Brain Connections:
+		* Scene_Builder:
+		- Password input is hidden with asterisks.
+		* Terminal_Commands:
+		- Added namespace StringFormatter to format command input and arguments.
+		- Func SetCommand take arguments trimmed before and after but not trimmed inside.
+		- New Whatis command is same as Help.
+	* Encryptor:
+	- Command remaster: [hashcrack --bruteforce --decryptfile <filename.type>] CHANGED TO: [hashcrack --bruteforce --crack-key --file <filename.type>]
+	BUGS RESOLVED:
+	- Command "help ENCRYPTOR" throws the "not found command" message. Fix: command_argument lowercased.
+===========
+14.09.22
+	* Brain Connections:
+		* Scene_Builder:
+		- On release mode, in the login page the console screen will be wiped.
+		- If the user logged in successfully, the console title will be changed to: 'FIH - Logged as: user@fillinhack'
+		* Terminal_Commands:
+		- New command: logout and logoff. Proceeds to the initial login page.
+		* Account_Login:
+		- Added file encryption with the security key.
+		* Encryptor:
+		- Program now depends 100% on the console by checking if it's pid is available.
+
+

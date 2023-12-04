@@ -1,0 +1,129 @@
+#############################
+# 	FillInHack - Console 	#
+#############################
+
+==============================
+# Application.cpp #
+-> "../Libs/Program_Config.h"
+-> "../Libs/Program_Manager.h"
+-> "../Libs/Debugger.h"
+==============================
+# Program_Config.h #
+-> <iostream>
+-> <Windows.h>
+==============================
+# Debugger.h #
+-> <iostream>
+-> "FillInHack/Libs/Colored_Console.h"
+==============================
+# Program_Manager.h #
+-> "Account_Login.h"
+-> "Scene_Builder.h"
+-> <iostream>
+++++++++++++++++++++++++++++++
+# Program_Manager.cpp #
+-> "../Libs/Program_Manager.h"
+-> "../Libs/Program_Config.h"
+-> "../Libs/PC_Info.h"
+-> "../Libs/Debugger.h"
+-> "FillInHack/Libs/Random_Generator.h"
+==============================
+# PC_Info.h #
+-> <iostream>
+++++++++++++++++++++++++++++++
+# PC_Info.cpp #
+-> "../Libs/PC_Info.h"
+-> "../Libs/Debugger.h"
+-> <Windows.h>
+-> <lmcons.h>
+-> <comdef.h>
+-> <fstream>
+-> <sys/stat.h>
+==============================
+# Account_Login.h #
+-> <vector>
+-> <iostream>
+-> "FillInHack/Libs/File_Manager.h"
+++++++++++++++++++++++++++++++
+# Account_Login.cpp #
+-> "../Libs/Account_Login.h"
+-> "../Libs/Program_Config.h"
+-> "../Libs/PC_Info.h"
+-> "../Libs/Debugger.h"
+# Scene_Builder.h #
+++++++++++++++++++++++++++++++
+# Scene_Builder.cpp #
+-> "../Libs/Scene_Builder.h"
+-> "../Libs/Program_Manager.h"
+-> "../Libs/Terminal.h"
+-> "../Libs/Debugger.h"
+-> <iostream>
+-> <string>
+==============================
+# Terminal_Commands.h #
+-> <iostream>
+-> <vector>
+++++++++++++++++++++++++++++++
+# Terminal_Commands.cpp #
+-> "FillInHack/Libs/Colored_Console.h"
+-> "../Libs/Terminal_Commands.h"
+-> "../Libs/Program_Manager.h"
+-> "../Libs/Program_Config.h"
+-> "../Libs/PC_Info.h"
+-> "../Libs/Debugger.h"
+-> <algorithm>
+-> <Windows.h>
+-> <string>
+==============================
+# Terminal.h #
+-> "Terminal_Commands.h"
+-> <iostream>
+++++++++++++++++++++++++++++++
+# Terminal.cpp #
+-> "../Libs/Terminal.h"
+-> "FillInHack/Libs/Colored_Console.h"
+-> "../Libs/Program_Manager.h"
+==============================
+
+
+#################
+# 	encryptor 	#
+#################
+==============================
+# encryptor.cpp #
+-> <iostream>
+-> <algorithm>
+-> "../Libs/Program_Config.h"
+-> "../Libs/Integrated_Encryptor.h"
+-> "../Libs/Hashcrack_Bruteforce.h"
+-> "FillInHack/Libs/File_Manager.h"
+-> "FillInHack/Libs/Timer.h"
+-> "FillInHack/Libs/Colored_Console.h"
+==============================
+# Integrated_Encryptor.h #
+-> <iostream>
+++++++++++++++++++++++++++++++
+# Integrated_Encryptor.cpp #
+-> "../Libs/Integrated_Encryptor.h"
+-> "../Libs/PC_Info.h"
+-> <iostream>
+-> <fstream>
+-> <string>
+==============================
+# Hashcrack_Bruteforce.h #
+-> "FillInHack/Libs/File_Manager.h"
+-> <iostream>
+++++++++++++++++++++++++++++++
+# Hashcrack_Bruteforce.cpp #
+-> <math.h>
+==============================
+
+
+#############
+# 	help 	#
+#############
+==============================
+# main_help.cpp #
+-> <iostream>
+-> <Windows.h>
+==============================

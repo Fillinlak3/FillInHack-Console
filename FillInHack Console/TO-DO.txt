@@ -1,0 +1,27 @@
+Am facut .lib pentru FillInHack_Header si acum merge si partea de Authentificator si inheritarea.
+
+################
+# PENTRU MAINE #
+################
+@ Trebuie sa lucrez la partea de Authentificator si sa implementez autentificarea (logarea si inregistrarea pe baza unei comenzi si a unei chei generate intr-un fisier temporar in %temp% (care se va sterge dupa aceea)).
+
+@ Fisierul cu conturile va fi criptat cu o anumita cheie inclusa in codul programului, care la randul ei va fi criptata cu algoritmul pe care-l mai foloseam eu uneori.
+
+#########################
+# AUTHENTIFICATOR CLASS #
+#########################
+
+@ Va trebui ca fiecare utilizator (user&pass) sa fie citit intr-un vector al structurii Users.
+
+@ La criptare nu se pot folosi spatii pentru cheie
+
+@ Dupa care la final voi implementa si functia de change password (si poate delete account).
+
+########
+10.09.22
+########
+IDEI:
+Sa incerc sa criptez fisierul de accounts.
+Sa sterg din Updater versiunile prestabilite.
+
+

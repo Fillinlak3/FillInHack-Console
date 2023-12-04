@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="FillInHack">
+      <UniqueIdentifier>{66d18522-a972-46b4-8a54-b93e9f70c945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FillInHack\Libs">
+      <UniqueIdentifier>{d24cd065-0b52-4247-bac8-8b799f4ec13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FillInHack\src">
+      <UniqueIdentifier>{486ef60a-030b-4f19-9868-bd014f92d919}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FillInHack\FillInHack.h">
+      <Filter>FillInHack</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\Array_Lists.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\Colored_Console.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\Converters.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\Encryptor.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\FIH_Exceptions.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\File_Manager.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\Random_Generator.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="FillInHack\Libs\Timer.h">
+      <Filter>FillInHack\Libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FillInHack\src\Array_Lists.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FillInHack\src\Colored_Console.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FillInHack\src\Converters.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FillInHack\src\Encryptor.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FillInHack\src\File_Manager.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FillInHack\src\Random_Generator.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FillInHack\src\Timer.cpp">
+      <Filter>FillInHack\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
