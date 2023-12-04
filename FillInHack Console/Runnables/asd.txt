@@ -1,1 +1,0 @@
-https://stackoverflow.com/questions/31553882/testing-for-active-flags-during-keyboard-input
